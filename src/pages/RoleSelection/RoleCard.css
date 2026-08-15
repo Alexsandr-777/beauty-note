@@ -1,0 +1,26 @@
+.roleCardContainer {
+  display: flex;
+  position: relative;
+  width: 334px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.cosmetolog {
+  background: #d99aa0;
+}
+.client {
+  background: #e8d8cc;
+}
+.imgRoleCard {
+  width: 118px;
+  height: 150px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.roleCardButton {
+  display: flex;
+  position: absolute;
+  top: 60px;
+  right: 8px;
+}

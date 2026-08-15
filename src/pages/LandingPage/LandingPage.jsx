@@ -1,6 +1,7 @@
 import "./LandingPage.css";
 import BenefitsLanding from "./BenefitsLanding";
 import PrimaryButton from "../../components/ui/PrimaryButton/PrimaryButton";
+import LoginPrompt from "../../components/LoginPrompt";
 
 function LandingPage() {
   const handleClick = () => {
@@ -15,12 +16,7 @@ function LandingPage() {
 
         <div className="landingActions">
           <PrimaryButton buttonText="Начать" onClick={handleClick} />
-          <span className="loginPrompt">
-            Уже есть аккаунт?
-            <a className="loginLink" href="#">
-              "Войти"
-            </a>
-          </span>
+          <LoginPrompt />
         </div>
       </div>
     </main>

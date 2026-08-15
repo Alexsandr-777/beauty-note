@@ -1,8 +1,10 @@
-import LandingPage from "./pages/LandingPage/LandingPage";
+// import LandingPage from "./pages/LandingPage/LandingPage";
+import RoleSelection from "./pages/RoleSelection/RoleSelection";
 function App() {
   return (
     <>
-      <LandingPage />
+      {/* <LandingPage /> */}
+      <RoleSelection />
     </>
   );
 }
