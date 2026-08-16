@@ -8,8 +8,8 @@ function CosmetologistRegistrationPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    passord: "",
-    repeadPassword: "",
+    password: "",
+    repeatPassword: "",
   });
 
   const handleSubmit = (e) => {
@@ -22,7 +22,6 @@ function CosmetologistRegistrationPage() {
       ...formData,
       [e.target.name]: e.target.value,
     });
-    console.log(formData);
   };
 
   return (
@@ -58,9 +57,9 @@ function CosmetologistRegistrationPage() {
         />
         <input
           type="password"
-          name="repeadPassword"
+          name="repeatPassword"
           placeholder="Повторите пароль"
-          value={formData.repeadPassword}
+          value={formData.repeatPassword}
           onChange={handleChange}
         />
         <PrimaryButton type="submit" buttonText="Создать аккаунт" />
