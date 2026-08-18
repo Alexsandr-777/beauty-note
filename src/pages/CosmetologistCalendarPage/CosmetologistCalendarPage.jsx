@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MonthSelector from "./MonthSelector/MonthSelector";
-import SelectedDayInfo from "./SelectedDayInfo/SelectedDayInfo";
+import WeekCalendar from "./WeekCalendar/WeekCalendar";
 
 import "./CosmetologistCalendarPage.css";
 
@@ -15,7 +15,7 @@ function CosmetologistCalendarPage() {
   return (
     <main className="cosmetologistCalendarContainer">
       <MonthSelector selectDate={selectedDate} changeDate={changeDate} />
-      <SelectedDayInfo selectDate={selectedDate} />
+      <WeekCalendar selectDate={selectedDate} />
     </main>
   );
 }
