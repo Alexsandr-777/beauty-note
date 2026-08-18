@@ -5,7 +5,7 @@ import "./WeekCalendar.css";
 import { shortWeekDay } from "../data/shortWeekDay";
 import { addDays, startOfWeek } from "date-fns";
 
-function WeekCalendar({ selectDate }) {
+function WeekCalendar({ selectDate, changeDate }) {
   const WEEKDAYS = [0, 1, 2, 3, 4, 5, 6]; //Создаем массив сколько дней от понедельника 0-понедельлник, вторник +1 и тд .. воскр это  +6
   const weekStart = startOfWeek(selectDate, {
     weekStartsOn: 1,
@@ -29,10 +29,14 @@ function WeekCalendar({ selectDate }) {
           const dayNumber = day.getDate(); //получаем число месяца у текущего day из массива недели.Тоесть актуальное число для дня недели месяца
           return (
             //запихиваем в разметку
-            <div key={day.getTime()} className="dayCard">
+            <button
+              onClick={() => changeDate(day)}
+              key={day.getTime()}
+              className="dayCard"
+            >
               <div>{shortDay}</div>
               <div>{dayNumber}</div>
-            </div>
+            </button>
           );
         })}
       </div>
