@@ -2,6 +2,7 @@ import { useState } from "react";
 import MonthSelector from "./MonthSelector/MonthSelector";
 import WeekCalendar from "./WeekCalendar/WeekCalendar";
 import SelectedDayInfo from "./SelectedDayInfo/SelectedDayInfo";
+import AppointmentList from "./AppointmentList/AppointmentList";
 
 import "./CosmetologistCalendarPage.css";
 
@@ -18,6 +19,7 @@ function CosmetologistCalendarPage() {
       <MonthSelector selectDate={selectedDate} changeDate={changeDate} />
       <WeekCalendar selectDate={selectedDate} changeDate={changeDate} />
       <SelectedDayInfo selectedDate={selectedDate} />
+      <AppointmentList selectedDate={selectedDate} />
     </main>
   );
 }
